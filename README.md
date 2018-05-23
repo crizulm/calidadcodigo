@@ -93,6 +93,10 @@ Para esto lo que debemos hacer es lo siguiente:
 La configuracion deberia quedar de la siguiente manera:
 ![](./img/preferences-miscellaneous-checkstyle.png)
 
+### Comprobar los nuevos warnings
+
+
+
  ## Autoría
 **Autor:** Matías Crizul
 
