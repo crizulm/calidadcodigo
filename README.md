@@ -116,11 +116,11 @@ Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en l
 
 Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en las siguientes categorias:
 
-| **Chip** | **Nombre** | **Raza** |
-|--------|-----|---------|
-| 47586 | Ruffo | Bulldog Ingles | 
-| 32452 | Maia | Cocker Spaniel |
-| 94401 | Toby | Doberman |
+| **Categoria** | **Ejemplo** |
+|---------------|-------------|
+| 47586 | Ruffo | 
+| 32452 | Maia |
+| 94401 | Toby |
 
  ## Autoría
 **Autor:** Matías Crizul
