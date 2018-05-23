@@ -31,7 +31,7 @@ Todas estas convenciones junto a algunas otras han sido documentadas por distint
  - [**Java Code Conventions**](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
  - [**Google Code Conventions**](http://google.github.io/styleguide/javaguide.html)
  
- ### Analizadores estaticos de codigo
+### Analizadores estaticos de codigo
  
 El análisis estático de codigo es un tipo de análisis que se realiza sin ejecutar el programa (el análisis realizado sobre los programas en ejecución se conoce como análisis dinámico de software). El término se aplica generalmente a los análisis realizados por una herramienta automática, el análisis realizado por un humano es llamado comprensión de programas (o entendimiento de programas) como también revisión de código.
 
@@ -43,6 +43,11 @@ Existen distintas herramientas, pero en este caso nos estaremos enfocando en dos
 
 ### CheckStyle
 
+CheckStyle es una herramienta ([open source](https://github.com/checkstyle/checkstyle)) de calidad de código encargada de validar los estándares de codificacion. Es decir, chequea la sintaxis del código fuente que ha sido desarrollado, encontrando las ocurrencias de un determinado problema que haya sido previamente configurado mediante reglas para ser detectado.
+
+La herramienta nos permite configurar cuales reglas aplicar; por lo tanto lo iremos a configurar para que respete el estandar de codificacion de Google.
+
+#### asfawfasf
 
  
  ## Autoría
