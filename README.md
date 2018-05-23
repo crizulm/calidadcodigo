@@ -114,7 +114,12 @@ Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en l
 
 ## FindBugs
 
-
+Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en las siguientes categorias:
+| Categoria              | Ejemplo            |
+| :-------------------- | :------------------ |
+| `bindToController`    | `bool`              |
+| `clickOutsideToClose` | `bool`              |
+| `controller`          | `function` `string` 
 
  ## Autoría
 **Autor:** Matías Crizul
