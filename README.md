@@ -93,9 +93,23 @@ Para esto lo que debemos hacer es lo siguiente:
 La configuracion deberia quedar de la siguiente manera:
 ![](./img/preferences-miscellaneous-checkstyle.png)
 
-### Comprobar los nuevos warnings
+### Comprobar los warnings en la clase CurrencyConverter
 
+Luego de configurar el archivo de donde iremos a aplicar las reglas, debemos reiniciar Netbeans y ya deberiamos ver nuestro proyecto con ciertos WARNINGS marcados, estos warnings nos seran util a la hora de que estemos programando y aparezcan poderlos solucionar de forma inmeadiata.
+![](./img/class-warnings-checkstyle.png)
 
+## Comprobar la ventana de Action Items
+
+Checkstyle tambien tiene una ventana que se llama Action Items donde nos aparecen todos los problemas detectados, y nos permite filtrarlos a nivel de clase, o proyecto.
+![](./img/action-items-checkstyle.png)
+
+## Corregir defectos
+
+Para corregir el defecto simplemente debemos leeer el warning que nos marca Checkstyle, la mayoria de las veces el warning es bastante claro, pero si no logramos comprenderlo siempre podemos recurrir a la [documentacion oficial](http://google.github.io/styleguide/javaguide.html) de Google.
+
+Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en la linea 29 de la clase "CurrencyConverter".
+![](./img/empty-catch-checkstyle.png)
+![](./img/empty-catch-code-checkstyle.png)
 
  ## Autoría
 **Autor:** Matías Crizul
