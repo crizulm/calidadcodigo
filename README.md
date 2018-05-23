@@ -33,7 +33,28 @@ Todas estas convenciones junto a algunas otras han sido documentadas por distint
  
  ### Analizadores estaticos de codigo
  
- asfasf
+El análisis estático de codigo es un tipo de análisis que se realiza sin ejecutar el programa (el análisis realizado sobre los programas en ejecución se conoce como análisis dinámico de software). El término se aplica generalmente a los análisis realizados por una herramienta automática, el análisis realizado por un humano es llamado comprensión de programas (o entendimiento de programas) como también revisión de código.
+
+Estas herramientas nos ayudan a detectar incumplimiento de estandares de codificacion, obtener metricas del software, detectar vulnerabilidades de seguridad o codigo vulnerable a fallas, etc.
+
+Existen distintas herramientas, pero en este caso nos estaremos enfocando en dos basicamente; una de ellas nos permitira detectar problemas en la calidad de codigo y la otra detectar posibles bugs (errores) en nuestro codigo.
+
+## Guia de trabajo
+
+### CheckStyle
+
+
+ 
+ ## Autoría
+**Autor:** Matías Crizul
+
+**E-mail:** crizulm@gmail.com
+
+### Referencias
+
+1. https://es.wikipedia.org/wiki/Análisis_estático_de_software
+2. https://github.com/arqsoftort/calidad
+3. http://checkstyle.sourceforge.net/google_style.html
 
 Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
 
