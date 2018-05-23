@@ -117,10 +117,16 @@ Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en l
 Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en las siguientes categorias:
 
 | **Categoria** | **Ejemplo** |
-|---------------|-------------|
-| 47586 | Ruffo | 
-| 32452 | Maia |
-| 94401 | Toby |
+|---------------------------|-------------|
+| Correctness | Ruffo | 
+| Bad practice | Maia |
+| Dodgy code | Toby |
+| Multithreaded Correctness | Toby |
+| Performance | Toby |
+| Malicious Code Vulnerability | Toby |
+| Security | Toby |
+| Experimental | Toby |
+| Internationalization | Toby |
 
  ## Autoría
 **Autor:** Matías Crizul
