@@ -6,6 +6,7 @@ La idea de esta guia en introducir lo que refiere al tema "Calidad de codigo", e
 
 ## Introduccion
 
+### Estandares de codificacion
 Como ya se sabe la mayoria del tiempo un equipo de desarollo de software realiza tareas de mantenimiento sobre una aplicacion, ya que se ha comprobado que el 80% del tiempo de vida de una aplicacion corresponde a mantenimiento.
 Por lo cual es indispensable entender el codigo que iremos a mantener, el cual cabe destacar que dificilmente sea codificado por la misma persona que lo ira a mantener.
 
@@ -30,6 +31,9 @@ Todas estas convenciones junto a algunas otras han sido documentadas por distint
  - [**Java Code Conventions**](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
  - [**Google Code Conventions**](http://google.github.io/styleguide/javaguide.html)
  
+ ### Analizadores estaticos de codigo
+ 
+ asfasf
 
 Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
 
