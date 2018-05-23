@@ -114,19 +114,37 @@ Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en l
 
 ## FindBugs
 
-Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en las siguientes categorias:
+Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en distintas categorias por ejemplo:
 
 | **Categoria** | **Ejemplo** |
-|---------------------------|-------------|
-| Correctness | Ruffo | 
-| Bad practice | Maia |
-| Dodgy code | Toby |
-| Multithreaded Correctness | Toby |
-| Performance | Toby |
-| Malicious Code Vulnerability | Toby |
-| Security | Toby |
-| Experimental | Toby |
-| Internationalization | Toby |
+|---------------------------|-------------------------------------------------------|
+| Bad practice | Comparar String usando ==, o != |
+| Dodgy code | Chequeo null redundante, de un valor que ya se sabia que era null |
+
+Todas las categorias se encuentra descriptas en este [link](http://www.methodsandtools.com/tools/findbugs.php)
+
+### Agregar plugin FindBugs a Netbeans
+
+Para instalar el plugin simplemente debemos realizar lo siguiente:
+1. Irnos a <kbd>Source -> Inspect</kbd>.
+2. Seleccionar <kbd>FindsBugs</kbd> en la seccion <kbd>Configuration</kbd>.
+3. Nos saldra un mensaje debajo que debemos instalar un plugin adicional, por lo cual clickeamos sobre <kbd>Install</kbd>.
+4. Luego de finalizado el proceso el plugin ya se encuentra instalado.
+
+![](./img/install-findbugs.png)
+
+### Inspeccionar el codigo utilizando FindBugs
+
+Luego de instalado sobre la misma ventana de Inspeccion, debemos realizar lo siguiente:
+1. Seleccionar el <kbd>Scope</kbd> de inspeccion, es decir el alcance; podemos hacerlo a nivel de clase, paquete, o proyecto.
+2. Comprobar que este seleccionado <kbd>FindBugs</kbd> en la seccion <kbd>Configuration</kbd>.
+3. Realizar click sobre <kbd>Inspect</kbd>.
+
+### Comprobar la ventana Inspector
+
+Luego de realizado el analisis les deberia desplegar la siguiente ventana:
+![](./img/inspector-findbugs.png)
+En ella se listan todos los posibles defectos encontrados, y si nos dirigimos al ultimo icono del lado izquierdo podemos visualizar los defectos categorizados segun el criterio mencionado al inicio de esta seccion.
 
  ## Autoría
 **Autor:** Matías Crizul
@@ -139,3 +157,4 @@ Findbugs es un analizador de codigo estatico (open source) encargado encontrar p
 2. https://github.com/arqsoftort/calidad
 3. http://checkstyle.sourceforge.net/google_style.html
 4. https://www.sickboy.cz/checkstyle/download.html
+5. http://www.methodsandtools.com/tools/findbugs.php
