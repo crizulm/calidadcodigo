@@ -98,13 +98,13 @@ La configuracion deberia quedar de la siguiente manera:
 Luego de configurar el archivo de donde iremos a aplicar las reglas, debemos reiniciar Netbeans y ya deberiamos ver nuestro proyecto con ciertos WARNINGS marcados, estos warnings nos seran util a la hora de que estemos programando y aparezcan poderlos solucionar de forma inmeadiata.
 ![](./img/class-warnings-checkstyle.png)
 
-## Comprobar la ventana de Action Items
+### Comprobar la ventana de Action Items
 
 Checkstyle tambien tiene una ventana que se llama Action Items donde nos aparecen todos los problemas detectados, y nos permite filtrarlos a nivel de clase, o proyecto.
 Si esta ventana no se encuentra abierta simplemente debe ir a <kbd> Window -> Action Items </kbd>.
 ![](./img/action-items-checkstyle.png)
 
-## Corregir defectos
+### Corregir defectos
 
 Para corregir el defecto simplemente debemos leeer el warning que nos marca Checkstyle, la mayoria de las veces el warning es bastante claro, pero si no logramos comprenderlo siempre podemos recurrir a la [documentacion oficial](http://google.github.io/styleguide/javaguide.html) de Google.
 
