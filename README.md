@@ -26,7 +26,10 @@ public class Perro {
 Si prestamos atencion al codigo anterior podemos darnos cuenta que la variable "EDAD_MAXIMA" refiere a una constante, la variable "nombre" seguramente un atributo de la clase, y la variable "E" no sabemos a que refiere y tambien podemos deducir que tiene un problema de nomeclatura.
 Todo esto lo pudimos deducir ya que sabemos que las constantes se nombran en [snake case](https://en.wikipedia.org/wiki/Snake_case), y que toda variable se nombra en [lower camel case](https://en.wikipedia.org/wiki/Camel_case).
 
-Todas estas convenciones junto a algunas otras han sido documentadas por distintas comunidades, por ejemplo la comunidad de Java tiene su propias convenciones.
+Todas estas convenciones junto a algunas otras han sido documentadas por distintas comunidades, por ejemplo la comunidad de Java y Google tienen sus propias convenciones.
+ - [**Java Code Conventions**](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+ - [**Google Code Conventions**](http://google.github.io/styleguide/javaguide.html)
+ 
 
 Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
 
