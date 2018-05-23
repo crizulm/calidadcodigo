@@ -108,7 +108,7 @@ Checkstyle tambien tiene una ventana que se llama Action Items donde nos aparece
 Para corregir el defecto simplemente debemos leeer el warning que nos marca Checkstyle, la mayoria de las veces el warning es bastante claro, pero si no logramos comprenderlo siempre podemos recurrir a la [documentacion oficial](http://google.github.io/styleguide/javaguide.html) de Google.
 
 Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en la linea 29 de la clase "CurrencyConverter".
-![](./img/empty-catch-checkstyle.png)
+![](./img/empty-catch-info-checkstyle.png)
 ![](./img/empty-catch-code-checkstyle.png)
 
  ## Autoría
