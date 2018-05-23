@@ -41,13 +41,13 @@ Existen distintas herramientas, pero en este caso nos estaremos enfocando en dos
 
 ## Guia de trabajo
 
-### CheckStyle
+## CheckStyle
 
 CheckStyle es una herramienta ([open source](https://github.com/checkstyle/checkstyle)) de calidad de código encargada de validar los estándares de codificacion. Es decir, chequea la sintaxis del código fuente que ha sido desarrollado, encontrando las ocurrencias de un determinado problema que haya sido previamente configurado mediante reglas para ser detectado.
 
 La herramienta nos permite configurar cuales reglas aplicar; por lo tanto lo iremos a configurar para que respete el estandar de codificacion de Google.
 
-#### asfawfasf
+### 1. Proyecto sobre el cual iremos a trabajar
 
  
  ## Autoría
