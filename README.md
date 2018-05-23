@@ -101,6 +101,7 @@ Luego de configurar el archivo de donde iremos a aplicar las reglas, debemos rei
 ## Comprobar la ventana de Action Items
 
 Checkstyle tambien tiene una ventana que se llama Action Items donde nos aparecen todos los problemas detectados, y nos permite filtrarlos a nivel de clase, o proyecto.
+Si esta ventana no se encuentra abierta simplemente debe ir a <kbd> Window -> Action Items </kbd>.
 ![](./img/action-items-checkstyle.png)
 
 ## Corregir defectos
@@ -110,6 +111,10 @@ Para corregir el defecto simplemente debemos leeer el warning que nos marca Chec
 Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en la linea 29 de la clase "CurrencyConverter".
 ![](./img/empty-catch-info-checkstyle.png)
 ![](./img/empty-catch-code-checkstyle.png)
+
+## FindBugs
+
+
 
  ## Autoría
 **Autor:** Matías Crizul
