@@ -87,7 +87,7 @@ Luego de instalar Checkstyle es hora de configurarlo, como dijimos anteriormente
 Para esto lo que debemos hacer es lo siguiente:
 1. Irnos a <kbd>Netbeans -> Preferences</kbd>.
 2. Presionar sobre el tab <kbd>Miscellaneous</kbd> y luego sobre el tab <kbd>Checkstle</kbd>.
-3. En el campo de texto "Configuration File" debemos ingresar la ruta donde se encuentra nuestro archivo XML que contiene las reglas (este archivo se encuentra en este repositorio bajo el nombre de **google_checkstyle.xml**).
+3. En el campo de texto "Configuration File" debemos ingresar la ruta donde se encuentra nuestro archivo XML que contiene las reglas (este archivo se encuentra en este repositorio bajo el nombre de [**google_checkstyle.xml**](https://github.com/crizulm/calidadcodigo/blob/master/google-checkstyle.xml)).
 4. Presionar sobre <kbd>Apply</kbd>.
 
 La configuracion deberia quedar de la siguiente manera:
