@@ -83,6 +83,15 @@ Luego debemos reiniciar Netbeans, y comprobar que efectivamente el plugin ha sid
 
 ### Agregar archivo de configuracion a CheckStyle
 
+Luego de instalar Checkstyle es hora de configurarlo, como dijimos anteriormente este nos permite definir reglas que son las que van a ser chequeadas.
+Para esto lo que debemos hacer es lo siguiente:
+1. Irnos a <kbd>Netbeans -> Preferences</kbd>.
+2. Presionar sobre el tab <kbd>Miscellaneous</kbd> y luego sobre el tab <kbd>Checkstle</kbd>.
+3. En el campo de texto "Configuration File" debemos ingresar la ruta donde se encuentra nuestro archivo XML que contiene las reglas (este archivo se encuentra en este repositorio bajo el nombre de **google_checkstyle.xml**).
+4. Presionar sobre <kbd>Apply</kbd>.
+
+La configuracion deberia quedar de la siguiente manera:
+![](./img/preferences-miscellaneous-checkstyle.png)
 
  ## Autoría
 **Autor:** Matías Crizul
