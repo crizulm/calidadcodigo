@@ -48,7 +48,7 @@ CheckStyle es una herramienta ([open source](https://github.com/checkstyle/check
 La herramienta nos permite configurar cuales reglas aplicar; por lo tanto lo iremos a configurar para que respete el estandar de codificacion de [Google](http://google.github.io/styleguide/javaguide.html).
 Esta herramienta se integra perfectamente como [plugin](https://www.sickboy.cz/checkstyle/download.html) de Netbeans, y nos permite visualizar los problemas encontrados dentro del mismo IDE.
 
-### 1. Proyecto sobre el cual iremos a trabajar
+### Proyecto sobre el cual iremos a trabajar
 
 No es necesario crear un nuevo proyecto para poder probar la herramienta, en este repositorio se encuentra un proyecto llamado **CheckStyleEjemplo**. Por lo tanto, lo unico que deben hacer es clonar este repositorio.
 
@@ -59,8 +59,26 @@ Luego de clonado el repositorio, debemos abrir el proyecto:
 
 Luego de esto ya deberiamos poder ver el proyecto en nuestro explorador de proyectos de Netbeans.
 
-### 1. Agregar plugin CheckStyle a Netbeans
+### Agregar plugin CheckStyle a Netbeans
  
+Para instalar Checkstyle tenemos dos opciones descargar el plugin directamente como un archivo comprimido o realizar la instalacion online; en la [pagina oficial](https://www.sickboy.cz/checkstyle/download.html) debemos obtener la URL tanto para realizar la instalacion online o descargar el plugin directamente.
+
+Para instalarlo online, se debe copiar la URL que aparece en la seccion "Online Installation" de la pagina oficial y agregarla como Update Center en la configuración de plugins en NetBeans; para realizar esto debemos:
+1. Irnos a <kbd>Tools -> Plugins</kbd>.
+2. Dirigirnos a la tab <kbd>Settings</kbd> y clickear en <kbd>Add</kbd>.
+3. Escribir como nombre de provider "CheckStyle", y pegar la URL que copiamos anteriormente, para luego clickear en <kbd>OK</kbd>.
+
+Deberia aparecernos en el listado de nuestros Update Centers el de CheckStyle:
+![](./img/plugins-settings-checkstyle.png)
+
+Luego de comprobar que nos aparece como Update Center, debemos instalar el plugin para esto:
+1. Irnos a la tab <kbd>Available Plugins</kbd>.
+2. Buscar "CheckStyle", y checkear todos los resultados que nos aparecen.
+3. Clickear sobre <kbd>Install</kbd>.
+
+Luego debemos reiniciar Netbeans, y comprobar que efectivamente el plugin ha sido instalado para esto debernos irnos nuevamente a <kbd>Tools -> Plugins</kbd> y a la tab <kbd>Installed</kbd> y verlo de la sigueinte manera:
+![](./img/plugins-installed-checkstyle.png)
+
  ## Autoría
 **Autor:** Matías Crizul
 
