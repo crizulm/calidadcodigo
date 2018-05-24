@@ -1,5 +1,3 @@
-![](./img/logo.jpg)
-
 ## Tema a tratar
 
 La idea de esta guia en introducir lo que refiere al tema "Calidad de codigo", en esta oportunidad nos vamos a centrar en lo que tiene que ver con "Estandares de codificacion" y "Analizadores estaticos de codigo".
