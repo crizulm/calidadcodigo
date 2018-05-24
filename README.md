@@ -48,25 +48,25 @@ Esta herramienta se integra perfectamente como [plugin](https://www.sickboy.cz/c
 
 ### Proyecto sobre el cual iremos a trabajar
 
-No es necesario crear un nuevo proyecto para poder probar la herramienta, en este repositorio se encuentra un proyecto llamado **CheckStyleEjemplo**. Por lo tanto, lo unico que deben hacer es clonar este repositorio.
+No es necesario crear un nuevo proyecto para poder probar la herramienta, en este repositorio se encuentra un proyecto llamado **CheckStyleEjemplo**. Por lo tanto, lo único que deben hacer es clonar este repositorio.
 
 Luego de clonado el repositorio, debemos abrir el proyecto:
 1. Irnos a <kbd>File -> Open Proyect</kbd>.
 2. Irnos al directorio donde tenemos clonado el proyecto.
 3. Seleccionar el proyecto llamado **CheckStyleEjemplo** y clickear <kbd>Open Project</kbd>
 
-Luego de esto ya deberiamos poder ver el proyecto en nuestro explorador de proyectos de Netbeans.
+Luego de esto ya deberíamos poder ver el proyecto en nuestro explorador de proyectos de Netbeans.
 
 ### Agregar plugin CheckStyle a Netbeans
  
-Para instalar Checkstyle tenemos dos opciones descargar el plugin directamente como un archivo comprimido o realizar la instalacion online; en la [pagina oficial](https://www.sickboy.cz/checkstyle/download.html) debemos obtener la URL tanto para realizar la instalacion online o descargar el plugin directamente.
+Para instalar Checkstyle tenemos dos opciones descargar el plugin directamente como un archivo comprimido o realizar la instalación online; en la [pagina oficial](https://www.sickboy.cz/checkstyle/download.html) debemos obtener la URL tanto para realizar la instalación online o descargar el plugin directamente.
 
-Para instalarlo online, se debe copiar la URL que aparece en la seccion "Online Installation" de la pagina oficial y agregarla como Update Center en la configuración de plugins en NetBeans; para realizar esto debemos:
+Para instalarlo online, se debe copiar la URL que aparece en la sección "Online Installation" de la pagina oficial y agregarla como Update Center en la configuración de plugins en NetBeans; para realizar esto debemos:
 1. Irnos a <kbd>Tools -> Plugins</kbd>.
 2. Dirigirnos a la tab <kbd>Settings</kbd> y clickear en <kbd>Add</kbd>.
 3. Escribir como nombre de provider "CheckStyle", y pegar la URL que copiamos anteriormente, para luego clickear en <kbd>OK</kbd>.
 
-Deberia aparecernos en el listado de nuestros Update Centers el de CheckStyle:
+Debería aparecernos en el listado de nuestros Update Centers el de CheckStyle:
 ![](./img/plugins-settings-checkstyle.png)
 
 Luego de comprobar que nos aparece como Update Center, debemos instalar el plugin para esto:
@@ -74,12 +74,12 @@ Luego de comprobar que nos aparece como Update Center, debemos instalar el plugi
 2. Buscar "CheckStyle", y checkear todos los resultados que nos aparecen.
 3. Clickear sobre <kbd>Install</kbd>.
 
-Luego debemos reiniciar Netbeans, y comprobar que efectivamente el plugin ha sido instalado para esto debernos irnos nuevamente a <kbd>Tools -> Plugins</kbd> y a la tab <kbd>Installed</kbd> y verlo de la sigueinte manera:
+Luego debemos reiniciar Netbeans, y comprobar que efectivamente el plugin ha sido instalado para esto debernos irnos nuevamente a <kbd>Tools -> Plugins</kbd> y a la tab <kbd>Installed</kbd> y verlo de la siguiente manera:
 ![](./img/plugins-installed-checkstyle.png)
 
-> **Aclaración:** La version de la captura de pantalla anterior puede ser distinta.
+> **Aclaración:** La versión de la captura de pantalla anterior puede ser distinta.
 
-### Agregar archivo de configuracion a CheckStyle
+### Agregar archivo de configuración a CheckStyle
 
 Luego de instalar Checkstyle es hora de configurarlo, como dijimos anteriormente este nos permite definir reglas que son las que van a ser chequeadas.
 Para esto lo que debemos hacer es lo siguiente:
@@ -88,61 +88,61 @@ Para esto lo que debemos hacer es lo siguiente:
 3. En el campo de texto "Configuration File" debemos ingresar la ruta donde se encuentra nuestro archivo XML que contiene las reglas (este archivo se encuentra en este repositorio bajo el nombre de [**google-checkstyle.xml**](./google-checkstyle.xml)).
 4. Presionar sobre <kbd>Apply</kbd>.
 
-La configuracion deberia quedar de la siguiente manera:
+La configuración debería quedar de la siguiente manera:
 ![](./img/preferences-miscellaneous-checkstyle.png)
 
 ### Comprobar los warnings en la clase CurrencyConverter
 
-Luego de configurar el archivo de donde iremos a aplicar las reglas, debemos reiniciar Netbeans y ya deberiamos ver nuestro proyecto con ciertos WARNINGS marcados, estos warnings nos seran util a la hora de que estemos programando y aparezcan poderlos solucionar de forma inmeadiata.
+Luego de configurar el archivo de donde iremos a aplicar las reglas, debemos reiniciar Netbeans y ya deberíamos ver nuestro proyecto con ciertos WARNINGS marcados, estos warnings nos serán útil a la hora de que estemos programando y aparezcan poderlos solucionar de forma inmediata.
 ![](./img/class-warnings-checkstyle.png)
 
 ### Comprobar la ventana de Action Items
 
-Checkstyle tambien tiene una ventana que se llama Action Items donde nos aparecen todos los problemas detectados, y nos permite filtrarlos a nivel de clase, o proyecto.
+Checkstyle también tiene una ventana que se llama Action Items donde nos aparecen todos los problemas detectados, y nos permite filtrarlos a nivel de clase, o proyecto.
 Si esta ventana no se encuentra abierta simplemente debe ir a <kbd> Window -> Action Items </kbd>.
 ![](./img/action-items-checkstyle.png)
 
 ### Corregir defectos
 
-Para corregir el defecto simplemente debemos leeer el warning que nos marca Checkstyle, la mayoria de las veces el warning es bastante claro, pero si no logramos comprenderlo siempre podemos recurrir a la [documentacion oficial](http://google.github.io/styleguide/javaguide.html) de Google.
+Para corregir el defecto simplemente debemos leer el warning que nos marca Checkstyle, la mayoría de las veces el warning es bastante claro, pero si no logramos comprenderlo siempre podemos recurrir a la [documentación oficial](http://google.github.io/styleguide/javaguide.html) de Google.
 
-Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacio en la linea 29 de la clase "CurrencyConverter".
+Por ejemplo el siguiente defecto nos dice que tenemos un bloque catch vacío en la línea 29 de la clase "CurrencyConverter".
 ![](./img/empty-catch-info-checkstyle.png)
 ![](./img/empty-catch-code-checkstyle.png)
 
 ## FindBugs
 
-Findbugs es un analizador de codigo estatico (open source) encargado encontrar posibles defectos (bugs) en nuestro codigo, los defectos encontrados por Findbugs se clasifican en distintas categorias por ejemplo:
+Findbugs es un analizador de código estático (open source) encargado encontrar posibles defectos (bugs) en nuestro código, los defectos encontrados por Findbugs se clasifican en distintas categorías por ejemplo:
 
 | **Categoria** | **Ejemplo** |
 |---------------------------|-------------------------------------------------------|
 | Bad practice | Comparar String usando ==, o != |
 | Dodgy code | Chequeo null redundante, de un valor que ya se sabia que era null |
 
-Todas las categorias se encuentra descriptas en este [link](http://www.methodsandtools.com/tools/findbugs.php)
+Todas las categorías se encuentra descriptas en este [link](http://www.methodsandtools.com/tools/findbugs.php)
 
 ### Agregar plugin FindBugs a Netbeans
 
 Para instalar el plugin simplemente debemos realizar lo siguiente:
 1. Irnos a <kbd>Source -> Inspect</kbd>.
-2. Seleccionar <kbd>FindsBugs</kbd> en la seccion <kbd>Configuration</kbd>.
-3. Nos saldra un mensaje debajo que debemos instalar un plugin adicional, por lo cual clickeamos sobre <kbd>Install</kbd>.
+2. Seleccionar <kbd>FindsBugs</kbd> en la sección <kbd>Configuration</kbd>.
+3. Nos saldrá un mensaje debajo que debemos instalar un plugin adicional, por lo cual clickeamos sobre <kbd>Install</kbd>.
 4. Luego de finalizado el proceso el plugin ya se encuentra instalado.
 
 ![](./img/install-findbugs.png)
 
-### Inspeccionar el codigo utilizando FindBugs
+### Inspeccionar el código utilizando FindBugs
 
-Luego de instalado sobre la misma ventana de Inspeccion, debemos realizar lo siguiente:
-1. Seleccionar el <kbd>Scope</kbd> de inspeccion, es decir el alcance; podemos hacerlo a nivel de clase, paquete, o proyecto.
-2. Comprobar que este seleccionado <kbd>FindBugs</kbd> en la seccion <kbd>Configuration</kbd>.
+Luego de instalado sobre la misma ventana de Inspección, debemos realizar lo siguiente:
+1. Seleccionar el <kbd>Scope</kbd> de inspección, es decir el alcance; podemos hacerlo a nivel de clase, paquete, o proyecto.
+2. Comprobar que este seleccionado <kbd>FindBugs</kbd> en la sección <kbd>Configuration</kbd>.
 3. Realizar click sobre <kbd>Inspect</kbd>.
 
 ### Comprobar la ventana Inspector
 
-Luego de realizado el analisis les deberia desplegar la siguiente ventana:
+Luego de realizado el análisis les debería desplegar la siguiente ventana:
 ![](./img/inspector-findbugs.png)
-En ella se listan todos los posibles defectos encontrados, y si nos dirigimos al ultimo icono del lado izquierdo podemos visualizar los defectos categorizados segun el criterio mencionado al inicio de esta seccion.
+En ella se listan todos los posibles defectos encontrados, y si nos dirigimos al ultimo icono del lado izquierdo podemos visualizar los defectos categorizados según el criterio mencionado al inicio de esta sección.
 
  ## Autoría
 **Autor:** Matías Crizul
