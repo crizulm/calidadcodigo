@@ -1,49 +1,49 @@
 ## Tema a tratar
 
-La idea de esta guia en introducir lo que refiere al tema "Calidad de codigo", en esta oportunidad nos vamos a centrar en lo que tiene que ver con "Estandares de codificacion" y "Analizadores estaticos de codigo".
+La idea de esta guía en introducir lo que refiere al tema "Calidad de código", en esta oportunidad nos vamos a centrar en lo que tiene que ver con "Estándares de codificación" y "Analizadores estáticos de código".
 
-## Introduccion
+## Introducción
 
-### Estandares de codificacion
-Como ya se sabe la mayoria del tiempo un equipo de desarollo de software realiza tareas de mantenimiento sobre una aplicacion, ya que se ha comprobado que el 80% del tiempo de vida de una aplicacion corresponde a mantenimiento.
-Por lo cual es indispensable entender el codigo que iremos a mantener, el cual cabe destacar que dificilmente sea codificado por la misma persona que lo ira a mantener.
+### Estándares de codificación
+Como ya se sabe la mayoría del tiempo un equipo de desarrollo de software realiza tareas de mantenimiento sobre una aplicación, ya que se ha comprobado que el 80% del tiempo de vida de una aplicación corresponde a mantenimiento.
+Por lo cual es indispensable entender el código que iremos a mantener, el cual cabe destacar que difícilmente sea codificado por la misma persona que lo ira a mantener.
 
-Como solucion a esto con el correr de los años distintas comunidades (Java, .Net, etc) han ido tomando decisiones con respecto a los estandares de codificacion, para contribuir al entendimiento del codigo.
+Como solución a esto con el correr de los años distintas comunidades (Java, .Net, etc) han ido tomando decisiones con respecto a los estándares de codificación, para contribuir al entendimiento del código.
 
 ```Java
 public class Perro {
-    private static int EDAD_MAXIMA = 15;
-    private String nombre;
-    private int E;
-    
-    ...
-    ...
-    ...
+ private static int EDAD_MAXIMA = 15;
+ private String nombre;
+ private int E;
+ 
+ ...
+ ...
+ ...
 }
 ```
 
-Si prestamos atencion al codigo anterior podemos darnos cuenta que la variable "EDAD_MAXIMA" refiere a una constante, la variable "nombre" seguramente un atributo de la clase, y la variable "E" no sabemos a que refiere y tambien podemos deducir que tiene un problema de nomeclatura.
+Si prestamos atención al código anterior podemos darnos cuenta que la variable "EDAD_MAXIMA" refiere a una constante, la variable "nombre" seguramente un atributo de la clase, y la variable "E" no sabemos a que refiere y también podemos deducir que tiene un problema de nomenclatura.
 Todo esto lo pudimos deducir ya que sabemos que las constantes se nombran en [snake case](https://en.wikipedia.org/wiki/Snake_case), y que toda variable se nombra en [lower camel case](https://en.wikipedia.org/wiki/Camel_case).
 
 Todas estas convenciones junto a algunas otras han sido documentadas por distintas comunidades, por ejemplo la comunidad de Java y Google tienen sus propias convenciones.
- - [**Java Code Conventions**](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
- - [**Google Code Conventions**](http://google.github.io/styleguide/javaguide.html)
- 
-### Analizadores estaticos de codigo
- 
-El análisis estático de codigo es un tipo de análisis que se realiza sin ejecutar el programa (el análisis realizado sobre los programas en ejecución se conoce como análisis dinámico de software). El término se aplica generalmente a los análisis realizados por una herramienta automática, el análisis realizado por un humano es llamado comprensión de programas (o entendimiento de programas) como también revisión de código.
+- [**Java Code Conventions**](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+- [**Google Code Conventions**](http://google.github.io/styleguide/javaguide.html)
 
-Estas herramientas nos ayudan a detectar incumplimiento de estandares de codificacion, obtener metricas del software, detectar vulnerabilidades de seguridad o codigo vulnerable a fallas, etc.
+### Analizadores estáticos de código
 
-Existen distintas herramientas, pero en este caso nos estaremos enfocando en dos basicamente; una de ellas nos permitira detectar problemas en la calidad de codigo y la otra detectar posibles bugs (errores) en nuestro codigo.
+El análisis estático de código es un tipo de análisis que se realiza sin ejecutar el programa (el análisis realizado sobre los programas en ejecución se conoce como análisis dinámico de software). El término se aplica generalmente a los análisis realizados por una herramienta automática, el análisis realizado por un humano es llamado comprensión de programas (o entendimiento de programas) como también revisión de código.
 
-## Guia de trabajo
+Estas herramientas nos ayudan a detectar incumplimiento de estándares de codificación, obtener métricas del software, detectar vulnerabilidades de seguridad o código vulnerable a fallas, etc.
+
+Existen distintas herramientas, pero en este caso nos estaremos enfocando en dos básicamente; una de ellas nos permitirá detectar problemas en la calidad de código y la otra detectar posibles bugs (errores) en nuestro código.
+
+## Guía de trabajo
 
 ## CheckStyle
 
-CheckStyle es una herramienta ([open source](https://github.com/checkstyle/checkstyle)) de calidad de código encargada de validar los estándares de codificacion. Es decir, chequea la sintaxis del código fuente que ha sido desarrollado, encontrando las ocurrencias de un determinado problema que haya sido previamente configurado mediante reglas para ser detectado.
+CheckStyle es una herramienta ([open source](https://github.com/checkstyle/checkstyle)) de calidad de código encargada de validar los estándares de codificación. Es decir, chequea la sintaxis del código fuente que ha sido desarrollado, encontrando las ocurrencias de un determinado problema que haya sido previamente configurado mediante reglas para ser detectado.
 
-La herramienta nos permite configurar cuales reglas aplicar; por lo tanto lo iremos a configurar para que respete el estandar de codificacion de [Google](http://google.github.io/styleguide/javaguide.html).
+La herramienta nos permite configurar cuales reglas aplicar; por lo tanto lo iremos a configurar para que respete el estándar de codificación de [Google](http://google.github.io/styleguide/javaguide.html).
 Esta herramienta se integra perfectamente como [plugin](https://www.sickboy.cz/checkstyle/download.html) de Netbeans, y nos permite visualizar los problemas encontrados dentro del mismo IDE.
 
 ### Proyecto sobre el cual iremos a trabajar
