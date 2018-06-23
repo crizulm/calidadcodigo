@@ -9,7 +9,7 @@ Como ya se sabe la mayoría del tiempo un equipo de desarrollo de software reali
 Por lo cual es indispensable entender el código que iremos a mantener, el cual cabe destacar que difícilmente sea codificado por la misma persona que lo ira a mantener.
 
 Como solución a esto con el correr de los años distintas comunidades (Java, .Net, etc) han ido tomando decisiones con respecto a los estándares de codificación, para contribuir al entendimiento del código.
-
+ 
 ```Java
 public class Perro {
  private static int EDAD_MAXIMA = 15;
