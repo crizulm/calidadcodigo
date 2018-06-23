@@ -149,7 +149,7 @@ En ella se listan todos los posibles defectos encontrados, y si nos dirigimos al
 
 **E-mail:** crizulm@gmail.com
 
-### Referencias
+### Referencias 
 
 1. https://es.wikipedia.org/wiki/Análisis_estático_de_software
 2. https://github.com/arqsoftort/calidad
